@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Finder</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Mess Finder</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+    <main>
+        <section class="search-section">
+            <input type="text" placeholder="Enter your location or hostel..." id="location-input">
+            <button id="search-btn">Search</button>
+        </section>
+        <section class="filters-section">
+            <label>
+                <input type="checkbox" name="type" value="mess"> Mess
+            </label>
+            <label>
+                <input type="checkbox" name="type" value="tiffin"> Tiffin Service
+            </label>
+            <label>
+                <input type="checkbox" name="type" value="restaurant"> Restaurant
+            </label>
+            <select id="sort-by">
+                <option value="rating">Sort by Rating</option>
+                <option value="budget">Sort by Budget</option>
+                <option value="distance">Sort by Distance</option>
+            </select>
+        </section>
+        <section class="results-section">
+            <!-- Example Mess Card -->
+            <div class="mess-card">
+                <h2>Sharma Mess</h2>
+                <p>Type: Mess</p>
+                <p>Location: Near Hostel A</p>
+                <p>Food Quality: ★★★★☆</p>
+                <p>Hygiene: ★★★★☆</p>
+                <p>Budget: ₹2500/month</p>
+                <p>Feedback: "Good food, clean place, seniors recommend!"</p>
+                <button>View Details</button>
+            </div>
+            <!-- More mess cards will be dynamically added here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mess Finder. All rights reserved.</p>
+    </footer>
+</body>
+</html>
